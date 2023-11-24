@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="sass/global.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <title>Newsletter sign-up form with success message | By Tiphany</title>
+
+</head>
+
+<body>
+
+  <div id="principalDiv" class="boxflex bg-white visible">
+
+
+
+    <div class="pict">
+      <img src="/assets/images/illustration-sign-up-mobile.svg" alt="" class="img-mobile">
+      <img src="/assets/images/illustration-sign-up-desktop.svg" alt="" class="img-desktop">
+    </div>
+
+    <div class="container-left">
+
+      <div class="container-text">
+        <h1 class="text-darkslategrey">
+          Stay updated!
+        </h1>
+
+        <div class="text text-charcoalgrey">
+          <p>
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <div class="liste">
+            <div class="row">
+              <div class="icone-liste">
+                <img src="./assets/images/icon-list.svg" alt="">
+              </div>
+              <div class="item">Product discovery and building what matters</div>
+            </div>
+            <div class="row">
+              <div class="icone-liste">
+                <img src="./assets/images/icon-list.svg" alt="">
+              </div>
+              <div class="item">Measuring to ensure updates are a success</div>
+            </div>
+            <div class="row">
+              <div class="icone-liste">
+                <img src="./assets/images/icon-list.svg" alt="">
+              </div>
+              <div class="item">And much more</div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div id="subscribe" class="form text-charcoalgrey">
+        <!-- Sign-up form start -->
+
+        <label for="email-address" class="">Email address</label>
+        <input type="text" class="" name="email" id="email-address" aria-describedby="email-address"
+          placeholder="email@company.com">
+        <button id="valid-email-address">Subscribe to monthly newsletter</button>
+        <!-- Sign-up form end -->
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Success message start -->
+  <div id="success" class="success-message hidden">
+    <div class="top">
+      <img src="./assets/images/icon-success.svg" alt="">
+      <h1>Thanks for subscribing!</h1>
+      <p class="">
+        A confirmation email has been sent to <span> ash@loremcompany.com</span>.
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+    </div>
+    <div>
+      <button id="dismissMessage" type="button" class="text-white bg-charcoalgrey">
+        Dismiss message
+      </button>
+
+
+    </div>
+  </div>
+  <!-- Success message end -->
+
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Tiphany</a>.
+    </div>
+  </footer>
+
+</body>
+<script src="./scripts/index.js"></script>
+</html>

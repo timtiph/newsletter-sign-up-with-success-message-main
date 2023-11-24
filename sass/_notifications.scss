@@ -1,0 +1,16 @@
+// located in _notifications.scss partial file
+.error {
+    @include notification {
+      background-color: DarkRed;
+      color: white;
+      border: 1px solid LightSlateGray;
+    }
+  }
+  
+  .success {
+    @include notification {
+      background-color: MediumSeaGreen;
+      color: MintCream;
+      border: 1px solid LightSalmon;
+    }
+  }

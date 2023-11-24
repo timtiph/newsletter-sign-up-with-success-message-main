@@ -1,0 +1,11 @@
+// located in _interfaces.scss partial file
+.alert {
+    @include button {
+        color: #F00;
+    }
+  }
+  .cancel {
+    @include button {
+        border: solid 1px #999;
+    }   
+  }

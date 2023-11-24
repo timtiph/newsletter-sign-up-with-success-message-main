@@ -1,0 +1,76 @@
+// located in _mixin.scss partial file
+@mixin mobile {
+    @media screen and (min-width: 375px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 900px) {
+        @content;
+    }
+}
+
+@mixin button() {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 15px;
+    border: solid 1px;
+    border-radius: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    background-color: hsl(235, 18%, 26%);
+    color: #fff;
+    transition: all 0.3s ease-out;
+    @content;
+}
+
+@mixin buttonHover() {
+    &:hover {
+        background: linear-gradient(to left, #FF5476, #FF673E);
+        color: #fff;
+    }
+}
+
+
+
+@mixin notification {
+    width: 99%;
+    height: 35px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.2em;
+    border-radius: 3px;
+    margin: 10px;
+    @content;
+}
+
+@mixin alert {
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    color: #F00;
+}
+
+@mixin cancel {
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    border: solid 1px #999;
+}
+
+button {
+    @include button;
+    @include buttonHover();
+}
+
+.alert {
+    @include alert;
+}
+
+.cancel {
+    @include cancel;
+}
+

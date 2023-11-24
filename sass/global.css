@@ -1,0 +1,106 @@
+:root {
+  --tomato: hsl(4, 100%, 67%);
+  --darkslategrey: hsl(234, 29%, 20%);
+  --charcoalgrey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+}
+
+button {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 15px;
+  border: solid 1px;
+  border-radius: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  background-color: hsl(235, 18%, 26%);
+  color: #fff;
+  transition: all 0.3s ease-out;
+}
+button:hover {
+  background: linear-gradient(to left, #FF5476, #FF673E);
+  color: #fff;
+}
+
+.alert {
+  display: block;
+  font-size: 20px;
+  text-decoration: none;
+  color: #F00;
+}
+
+.cancel {
+  display: block;
+  font-size: 20px;
+  text-decoration: none;
+  border: solid 1px #999;
+}
+
+.error {
+  width: 99%;
+  height: 35px;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 1.2em;
+  border-radius: 3px;
+  margin: 10px;
+  background-color: DarkRed;
+  color: white;
+  border: 1px solid LightSlateGray;
+}
+
+.success {
+  width: 99%;
+  height: 35px;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 1.2em;
+  border-radius: 3px;
+  margin: 10px;
+  background-color: MediumSeaGreen;
+  color: MintCream;
+  border: 1px solid LightSalmon;
+}
+
+.bg-tomato {
+  background-color: hsl(4, 100%, 67%) !important;
+}
+
+.text-tomato {
+  color: hsl(4, 100%, 67%) !important;
+}
+
+.bg-darkslategrey {
+  background-color: hsl(234, 29%, 20%) !important;
+}
+
+.text-darkslategrey {
+  color: hsl(234, 29%, 20%) !important;
+}
+
+.bg-charcoalgrey {
+  background-color: hsl(235, 18%, 26%) !important;
+}
+
+.text-charcoalgrey {
+  color: hsl(235, 18%, 26%) !important;
+}
+
+.bg-grey {
+  background-color: hsl(231, 7%, 60%) !important;
+}
+
+.text-grey {
+  color: hsl(231, 7%, 60%) !important;
+}
+
+.bg-white {
+  background-color: hsl(0, 0%, 100%) !important;
+}
+
+.text-white {
+  color: hsl(0, 0%, 100%) !important;
+}/*# sourceMappingURL=global.css.map */
